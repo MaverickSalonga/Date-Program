@@ -1,0 +1,106 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int D;
+	int M;
+	int Y;
+	cout<<"ADD DAY ";
+	cin>>D;
+	
+	cout<<"ADD MONTH ";
+	cin>>M;
+	
+	cout<<"ADD YEAR ";
+	cin>>Y;
+
+switch ( M )
+
+{
+	case 1:
+		if (D>0 && D<=31)
+		cout << "January " << D << "," << Y;
+		else
+		cout << "Invalid Date";
+		break;
+		
+	case 2:
+		if (D>0 && D<=28)
+		cout << "February " << D << "," << Y;
+		if (Y % 4 == 0 && D>0 && D<=29)
+		cout << "February " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+		
+	case 3:
+		if (D>0 && D<=31)
+		cout << "March " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		
+	case 4:
+		if (D>0 && D<=30)
+		cout << "April " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+		
+	case 5:
+		if (D>0 && D<=31)
+		cout << "May " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+		
+	case 6:
+		if (D>0 && D<=30)
+		cout << "June " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+		
+	case 7:
+		if (D>0 && D<=31)
+		cout << "July " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+		
+	case 8:
+		if (D>0 && D<=31)
+		cout << "August " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+		
+	case 9:
+		if (D>0 && D<=30)
+		cout << "September " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+		
+	case 10:
+		if (D>0 && D<=31)
+		cout << "October " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+		
+	case 11:
+		if (D>0 && D<=30)
+		cout << "November " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+	
+	case 12:
+		if (D>0 && D<=31)
+		cout << "December " << D << "," << Y;
+		else 
+		cout << "Invalid Date";
+		break;
+		
+	}
+}	
